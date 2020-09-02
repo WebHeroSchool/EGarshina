@@ -1,0 +1,11 @@
+.menu, .main-content__description {
+  font: 16px/19px "museo_sans_cyrl", arial, helvetica, sans-serif;
+}
+
+.main-content__title {
+  font: bold 200px/265px pt_serif, arial, helvetica, sans-serif;
+}
+
+.main-content__subtitle {
+  font: bold 70px/93px pt_serif, arial, helvetica, sans-serif;
+}
