@@ -1,11 +1,158 @@
-.menu, .main-content__description {
+.menu,
+.main-content__description {
   font: 16px/19px "museo_sans_cyrl300", arial, helvetica, sans-serif;
 }
 
 .main-content__title {
+  margin: 0;
   font: bold 200px/265px "pt_serifregular", arial, helvetica, sans-serif;
+  color: #F8EEE4;
+  opacity: 0.4
 }
 
 .main-content__subtitle {
   font: bold 70px/93px "pt_serifregular", arial, helvetica, sans-serif;
+  color: #F8EEE4;
+  margin: 0;
+  transform: translateY(-112%);
+  padding-left: 54px;
+} 
+
+.main-content__description {
+  color: #F8EEE4;
+  transform: translateY(-140%);
+  width: 45%;
+}
+
+.logo__image, .menu {
+  display: inline-block;
+} 
+
+body {
+  margin: 0;
+  background: no-repeat url(img/wrapimg.svg);
+  background-size: cover;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.logo__image {
+  padding: 103px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center; 
+}
+
+.menu__item {
+  position: relative;
+  margin-right: 24px;
+  color: #F8EEE4;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.menu__item::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+}
+
+.menu__item:hover {
+  opacity: .5;
+}
+
+.menu__item:hover::after,
+.menu__item_active::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.menu__item:hover::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+}
+
+.main {
+  width: 115%;
+  padding: 0 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content__button {
+  display: inline-block;
+  font: 16px/19px  "museo_sans_cyrl300", arial, helvetica, sans-serif;
+  color: #fff;
+  background: #D4BEA3;
+  padding: 17px 85px;
+  text-decoration: none;
+  border-radius: 48px;
+  transform: translateY(-135%);
+  transition: opacity .5s;
+  animation: flash 3s infinite ease-in-out reverse;
+}
+
+.main-content__button:hover: {
+  opacity: .5s;
+}
+
+@keyframes flash {
+  to {
+    color: red;
+  }
+}
+
+.image-content {
+  display: flex;
+  align-items: center;
+}
+
+.image-content__image {
+  position: relative;
+  margin-right: 24px;
+  border-radius: 5px;
+}
+
+.image-content__image:last-child {
+  padding-right: 0;
+}
+
+.image-content__image_big {
+  width: 226px;
+  height: 300px;
+}
+
+.image-content__image_medium {
+  width: 202px;
+  height: 270px;
+}
+
+.image-content__image_small {
+  width: 180px;
+  height: 270px;
 }
