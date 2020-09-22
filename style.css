@@ -36,8 +36,7 @@ body {
 }
 
 .wrapper {
-  margin: auto;
-  width: 79%;
+  margin-left: 180px;
 }
 
 .logo__image {
@@ -53,7 +52,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  margin-right: -6%;
+  margin-right: 7%;
 }
 
 .menu__item {
@@ -101,11 +100,11 @@ body {
 }
 
 .main {
-  width: 115%;
   padding: 70px 0 70px 0;
   display: flex;
   justify-content: space-between;
 }
+
 
 .main-content__button {
   display: inline-block;
@@ -134,6 +133,7 @@ body {
 .image-content {
   display: flex;
   align-items: center;
+  margin-right: -23px;
 }
 
 .image-content__image {
