@@ -1,21 +1,22 @@
 .menu,
 .main-content__description {
-  font: 20px/19px "museo_sans_cyrl300", arial, helvetica, sans-serif;
+  font: 16px/19px "museo_sans_cyrl300", arial, helvetica, sans-serif;
 }
 
 .main-content__title {
-  margin: 0;
-  font: bold 270px/265px "pt_serifregular", arial, helvetica, sans-serif;
+  margin: 0vw 0vw 0 0;
+  font: bold 197px/265px "pt_serifregular", arial, helvetica, sans-serif;
   color: #F8EEE4;
-  opacity: 0.4
+  opacity: 0.4;
+  letter-spacing: 0.7vw;
 }
 
 .main-content__subtitle {
-  font: bold 95px/93px "pt_serifregular", arial, helvetica, sans-serif;
+  font: bold 71px/93px "pt_serifregular", arial, helvetica, sans-serif;
   color: #F8EEE4;
   margin: 0;
   transform: translateY(-100%);
-  padding-left: 70px;
+  padding-left: 69px;
 } 
 
 .main-content__description {
@@ -39,12 +40,13 @@ body {
 
 
 .logo__image {
-  padding: 108px 0;
-  width: 123px; 
+  padding: 4.5vw 0;
+  width: 8vw; 
 }
 
 .header {
-  margin-left: 180px;
+  margin-left: 141px;
+  margin-bottom: 2.5vw;
   display: flex;
   justify-content: space-between;
 }
@@ -57,7 +59,7 @@ body {
 
 .menu__item {
   position: relative;
-  margin-right: 32px;
+  margin-right: 26px;
   color: #F8EEE4;
   text-decoration: none;
   transition: opacity .5s;
@@ -100,8 +102,8 @@ body {
 }
 
 .main {
-  margin-left: 180px;
-  padding: 70px 0 70px 0;
+  margin-left: 146px;
+  padding: 0vw 0 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -132,14 +134,13 @@ body {
 }
 
 .image-content {
-  transform: translateX(3%);
   display: flex;
   align-items: center;
 }
 
 .image-content__image {
   position: relative;
-  margin-right: 24px;
+  margin-right: 21px;
   border-radius: 5px;
 }
 
@@ -148,16 +149,17 @@ body {
 }
 
 .image-content__image_big {
-  width: 290px;
-  height: 375px;
+  width: 16.5vw;
+  height: 22vw;
 }
 
 .image-content__image_medium {
-  width: 265px;
-  height: 345px;
+  width: 15vw;
+  height: 20vw;
 }
 
 .image-content__image_small {
-  width: 185px;
-  height: 330px;
+  margin-right: 0;
+  width: 11vw;
+  height: 20vw;
 }
