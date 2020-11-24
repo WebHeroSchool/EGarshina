@@ -1,27 +1,29 @@
-.menu,
-.main-content__description {
-  font: 16px/19px "museo_sans_cyrl300", arial, helvetica, sans-serif;
+.menu {
+  font: 1.2vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
 }
 
 .main-content__title {
-  margin: 0;
-  font: bold 200px/265px "pt_serifregular", arial, helvetica, sans-serif;
+  margin: 0vw 0vw 0 0;
+  font: bold 14.5vw "pt_serifregular", arial, helvetica, sans-serif;
   color: #F8EEE4;
-  opacity: 0.4
+  opacity: 0.4;
+  letter-spacing: 0.7vw;
 }
 
 .main-content__subtitle {
-  font: bold 70px/93px "pt_serifregular", arial, helvetica, sans-serif;
+  font: bold 5.4vw "pt_serifregular", arial, helvetica, sans-serif;
   color: #F8EEE4;
   margin: 0;
-  transform: translateY(-112%);
-  padding-left: 54px;
+  transform: translateY(-110%);
+  padding-left: 4.3vw;
 } 
 
 .main-content__description {
+  font: 1.16vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
+  margin: -2.7vw 0 0 1vw;
   color: #F8EEE4;
-  transform: translateY(-140%);
-  width: 45%;
+  transform: translateY(-100%);
+  width: 28vw;
 }
 
 .logo__image, .menu {
@@ -29,40 +31,42 @@
 } 
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
-  background: no-repeat url(img/wrapimg.svg);
+  background: no-repeat url(img/wrapimg.png);
   background-size: cover;
 }
 
-.wrapper {
-  margin: auto;
-  width: 80%;
-}
 
 .logo__image {
-  padding: 103px 0;
+  padding: 4.5vw 0;
+  width: 8vw; 
 }
 
 .header {
+  margin-left: 10vw;
+  margin-bottom: 3.2vw;
   display: flex;
   justify-content: space-between;
 }
 
 .menu {
   display: flex;
-  align-items: center; 
+  align-items: center;
+  margin-right: 7%;
 }
 
 .menu__item {
   position: relative;
-  margin-right: 24px;
+  margin-right: 1.8vw;
   color: #F8EEE4;
   text-decoration: none;
-  transition: opacity .5s;
+  transition: opacity .5;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .menu__item::after {
@@ -98,27 +102,29 @@ body {
 }
 
 .main {
-  width: 115%;
-  padding: 0 0 100px 0;
+  margin-left: 10.5vw;
+  padding: 0vw 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 
+
 .main-content__button {
   display: inline-block;
-  font: 16px/19px  "museo_sans_cyrl300", arial, helvetica, sans-serif;
+  font: 1.15vw  "museo_sans_cyrl300", arial, helvetica, sans-serif;
   color: #fff;
   background: #D4BEA3;
-  padding: 17px 85px;
+  margin-left: 1vw;
+  padding: 20px 91px;
   text-decoration: none;
   border-radius: 48px;
-  transform: translateY(-135%);
+  transform: translateY(-58%);
   transition: opacity .5s;
   animation: flash 3s infinite ease-in-out reverse;
 }
 
-.main-content__button:hover: {
-  opacity: .5s;
+.main-content__button:hover {
+  opacity: .5;
 }
 
 @keyframes flash {
@@ -133,8 +139,9 @@ body {
 }
 
 .image-content__image {
+  margin-top: 1.2vw;
   position: relative;
-  margin-right: 24px;
+  margin-right: 1.5vw;
   border-radius: 5px;
 }
 
@@ -143,16 +150,65 @@ body {
 }
 
 .image-content__image_big {
-  width: 226px;
-  height: 300px;
+  width: 16.5vw;
+  height: 22vw;
 }
 
 .image-content__image_medium {
-  width: 202px;
-  height: 270px;
+  width: 15vw;
+  height: 20vw;
 }
 
 .image-content__image_small {
-  width: 180px;
-  height: 270px;
+  margin-right: 0;
+  width: 11vw;
+  height: 20vw;
 }
+
+@media (max-width: 1366px) {
+
+  .menu,
+  .main-content__description {
+    font: 16px/19px "museo_sans_cyrl300", arial, helvetica, sans-serif;
+  }
+
+  .main-content__title {
+    font: bold 197px/265px "pt_serifregular", arial, helvetica, sans-serif;
+  }
+
+  .main-content__subtitle {
+    font: bold 71px/93px "pt_serifregular", arial, helvetica, sans-serif;
+    transform: translateY(-100%);
+    padding-left: 69px;
+  } 
+
+  .main-content__description {
+    margin: 8px 0px 15px 18px;
+    width: 69%;
+  }
+
+  .header {
+    margin-left: 141px;
+    margin-bottom: 2.5vw;
+  }
+
+  .menu__item {
+    margin-right: 26px;
+  }
+
+  .main {
+    margin-left: 146px;
+  }
+
+  .main-content__button {
+    font: 20px/19px  "museo_sans_cyrl300", arial, helvetica, sans-serif;
+    margin-left: 2%;
+    padding: 17px 80px;
+    transform: translateY(-55%);
+  }
+
+  .image-content__image {
+    margin-right: 21px;
+  }
+}
+
