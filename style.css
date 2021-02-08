@@ -242,8 +242,7 @@ body {
   .menu {
     margin-right: 3.4vw;
   }
-
-  
+ 
   .main-content__title {
     font: bold 20vw "pt_serifregular", arial, helvetica, sans-serif;
   }
@@ -301,7 +300,6 @@ body {
   .menu__item {
     margin-right: 26px;
   }
-
 }
 
 @media (max-width: 375px) {
@@ -434,25 +432,5 @@ body {
     margin-left: 16vw;
     padding: 3.5vw 17.4vw;
     transform: translateY(1.8vw);
-  }
-
-  .image-content__image_big {
-    width: 22vw;
-    height: 29vw;
-}
-
-  .image-content__image_medium {
-    width: 20vw;
-    height: 26vw;
-}
-
-  .image-content__image_small {
-    width: 18vw;
-    height: 26vw;
-}
-
-  .image-content__image {
-    margin-right: 2vw;
-    margin-top: 0.4vw;
   }
 }
