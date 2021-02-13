@@ -216,7 +216,6 @@ body {
   .image-content__image {
     margin-top: 0.4vw;
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -226,10 +225,7 @@ body {
     font: 1.6vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
   }
 
-  body{
-    overflow: hidden;
-  }
-
+  
   .logo__image {
     padding: 6.4vw 0;
     width: 10vw;
@@ -254,14 +250,8 @@ body {
     letter-spacing: 0.6vw;
   } 
 
-  .image-content {
-    width: 110%;
-    transform: translateX(6vw); 
-    overflow: hidden;
-  }
-
   .main-content__description {
-    margin: 0 0 0 1.4vw;
+    margin: 0 5.3vw 0 1.4vw;
     width: 39vw;
     transform: translateY(-7.7vw);
   }
@@ -276,17 +266,17 @@ body {
   .image-content__image_big {
     width: 22vw;
     height: 29vw;
-}
+  }
 
   .image-content__image_medium {
     width: 20vw;
     height: 26vw;
-}
+  }
 
   .image-content__image_small {
     width: 18vw;
     height: 26vw;
-}
+  }
 
   .image-content__image {
     margin-right: 2vw;
@@ -296,9 +286,6 @@ body {
   .header {
     margin-left: 4vw;
     margin-bottom: 3.1vw;
-
-  .menu__item {
-    margin-right: 26px;
   }
 }
 
@@ -337,8 +324,8 @@ body {
     width: 20px;
     height: 3px;
     position: relative;
-    top: 12vw;
-    right: 7vw;
+    top: 17vw;
+    right: 9vw;
     z-index: 2;
   }
 
@@ -432,5 +419,5 @@ body {
     margin-left: 16vw;
     padding: 3.5vw 17.4vw;
     transform: translateY(1.8vw);
-  }
+  } 
 }
