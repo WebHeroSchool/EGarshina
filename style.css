@@ -2,6 +2,11 @@
   font: 1.2vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
 }
 
+.main-content__wrap {
+  position: relative;
+
+}
+
 .main-content__title {
   margin: 0 0 0 0;
   font: bold 14.5vw "pt_serifregular", arial, helvetica, sans-serif;
@@ -11,14 +16,16 @@
 }
 
 .main-content__subtitle {
+  position: absolute;
+  right: 1vw;
+  top: 6.4vw;
   font: bold 5.4vw "pt_serifregular", arial, helvetica, sans-serif;
   color: #F8EEE4;
-  margin: -7.7vw 0 0.9vw 4.3vw;
 } 
 
 .main-content__description {
   font: 1.16vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
-  margin: 0 0 4.1vw 1vw;
+  margin: 0 0 2vw 1vw;
   color: #F8EEE4;
   width: 28vw;
 }
@@ -29,7 +36,7 @@
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   background: no-repeat url(img/wrapimg.png);
   background-size: cover;
@@ -119,7 +126,6 @@ input {
   padding: 20px 91px;
   text-decoration: none;
   border-radius: 48px;
-  transform: translateY(-58%);
   transition: opacity .5s;
   animation: flash 3s infinite ease-in-out reverse;
 }
@@ -140,7 +146,7 @@ input {
 }
 
 .image-content__image {
-  margin-top: 1.2vw;
+  margin-top: 3.5vw;
   position: relative;
   margin-right: 1.5vw;
   border-radius: 5px;
@@ -177,21 +183,25 @@ input {
     height: 100vh;
   }
 
+  .menu {
+    margin-right: 6.5%;
+  }
+
   .main-content__title {
     font: bold 197px/265px "pt_serifregular", arial, helvetica, sans-serif;
   }
 
   .main-content__subtitle {
     font: bold 4.9vw "pt_serifregular", arial, helvetica, sans-serif;
-    transform: translateY(-7vw);
-    padding-left: 4vw;
+    padding-left: 0;
     letter-spacing: 0.3vw;
+    right: 1.6vw;
+    top: 8.1vw;
   } 
 
   .main-content__description {
-    margin: 0 0 0 1vw;
+    margin: 0.3vw 0 1.8vw 1vw;
     width: 29vw;
-    transform: translateY(-6.1vw);
   }
 
   .header {
@@ -211,11 +221,10 @@ input {
     font: bold 1.2vw  "museo_sans_cyrl300", arial, helvetica, sans-serif;
     margin-left: 0.8vw;
     padding: 1vw 4.6vw;
-    transform: translateY(-4.4vw);
   }
 
   .image-content__image {
-    margin-top: 0.4vw;
+    margin-top: 4vw;
   }
 }
 
@@ -226,7 +235,7 @@ input {
     font: 1.6vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
   }
 
-    .logo__image {
+  .logo__image {
     padding: 6.4vw 0;
     width: 10vw;
   }
@@ -245,22 +254,24 @@ input {
 
   .main-content__subtitle {
     font: bold 6.2vw "pt_serifregular", arial, helvetica, sans-serif;
-    transform: translateY(-9.6vw);
-    padding-left: 5.8vw;
+    right: 7.5vw;
+    top: 11.1vw;
     letter-spacing: 0.6vw;
   } 
 
   .main-content__description {
-    margin: 0 5.3vw 0 1.4vw;
+    margin: 0 5.3vw 3vw 1.4vw;
     width: 39vw;
-    transform: translateY(-7.7vw);
   }
 
   .main-content__button {
     font: bold 1.5vw  "museo_sans_cyrl300", arial, helvetica, sans-serif;
     margin-left: 1.8vw;
     padding: 1.2vw 6vw;
-    transform: translateY(-5.2vw);
+  }
+
+  .image-content {
+    overflow: hidden;
   }
 
   .image-content__image_big {
@@ -279,8 +290,8 @@ input {
   }
 
   .image-content__image {
-    margin-right: 2vw;
-    margin-top: 0.4vw;
+    margin-right: 2.8vw;
+    margin-top: 5.5vw;
   }
 
   .header {
@@ -289,25 +300,22 @@ input {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
 
-  .main-content__description {
-    font: 5vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
-  }
-
+  .main-content__description, 
   .menu {
     font: 5vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
   }
 
   .header {
     margin-left: 12vw;
-    margin-bottom: 5vw;
+    margin-bottom: 0;
   }
 
   .logo__image {
-    padding: 12vw 0;
-    width: 26vw;
-    height: 9vw;
+    padding: 8vw 0;
+    width: 18vw;
+    height: 6vw;
   }
 
   .main {
@@ -324,7 +332,7 @@ input {
     width: 20px;
     height: 3px;
     position: relative;
-    top: 17vw;
+    top: 10vw;
     right: 9vw;
     z-index: 2;
   }
@@ -390,6 +398,10 @@ input {
   #burger {
     display: none;
   }
+
+  .main-content__wrap {
+    margin-bottom: 0;
+  }
   
   .main-content__title {
     font: bold 45vw "pt_serifregular", arial, helvetica, sans-serif;
@@ -398,8 +410,8 @@ input {
 
   .main-content__subtitle {
     font: bold 15vw "pt_serifregular", arial, helvetica, sans-serif;
-    transform: translateY(-19vw);
-    padding-left: 16vw;
+    left: 16vw;
+    top: 22vw;
     letter-spacing: 1.1vw;
   } 
 
@@ -408,16 +420,62 @@ input {
   }
 
   .main-content__description {
-    margin: 0 0 0 6vw;
+    margin: 0 0 5vw 6vw;
     width: 79vw;
     text-align: center;
-    transform: translateY(-7.7vw);
+    font-size: 3vw;
+  }
+
+  .main-content__button {
+    font: bold 3vw  "museo_sans_cyrl300", arial, helvetica, sans-serif;
+    margin-left: 26vw;
+    padding: 2vw 11.4vw;
+  } 
+}
+
+@media (max-width: 375px) {
+
+  .main-content__description,
+  .menu {
+    font: 5vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
+  }
+
+  .header {
+    margin-left: 12vw;
+    margin-bottom: 5vw;
+  }
+
+  .logo__image {
+    padding: 12vw 0;
+    width: 26vw;
+    height: 9vw;
+  }
+
+  .burger-menu {
+    top: 17vw;
+    right: 9vw;
+  }
+
+  .main-content__wrap {
+    margin-bottom: 11vw;
+  }
+  
+  .main-content__subtitle {
+    font: bold 15vw "pt_serifregular", arial, helvetica, sans-serif;
+    left: 16vw;
+    top: 27.1vw;
+    letter-spacing: 1.1vw;
+  } 
+
+  .main-content__description {
+    margin: 0 0 10vw 6vw;
+    width: 79vw;
+    text-align: center;
   }
 
   .main-content__button {
     font: bold 4vw  "museo_sans_cyrl300", arial, helvetica, sans-serif;
     margin-left: 16vw;
     padding: 3.5vw 17.4vw;
-    transform: translateY(1.8vw);
   } 
 }
