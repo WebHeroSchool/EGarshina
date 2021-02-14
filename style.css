@@ -3,7 +3,7 @@
 }
 
 .main-content__title {
-  margin: 0vw 0vw 0 0;
+  margin: 0 0 0 0;
   font: bold 14.5vw "pt_serifregular", arial, helvetica, sans-serif;
   color: #F8EEE4;
   opacity: 0.4;
@@ -13,16 +13,13 @@
 .main-content__subtitle {
   font: bold 5.4vw "pt_serifregular", arial, helvetica, sans-serif;
   color: #F8EEE4;
-  margin: 0;
-  transform: translateY(-110%);
-  padding-left: 4.3vw;
+  margin: -7.7vw 0 0.9vw 4.3vw;
 } 
 
 .main-content__description {
   font: 1.16vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
-  margin: -2.7vw 0 0 1vw;
+  margin: 0 0 4.1vw 1vw;
   color: #F8EEE4;
-  transform: translateY(-100%);
   width: 28vw;
 }
 
@@ -49,6 +46,10 @@ body {
   margin-bottom: 3.2vw;
   display: flex;
   justify-content: space-between;
+}
+
+input {
+  display: none;
 }
 
 .menu {
@@ -225,8 +226,7 @@ body {
     font: 1.6vw "museo_sans_cyrl300", arial, helvetica, sans-serif;
   }
 
-  
-  .logo__image {
+    .logo__image {
     padding: 6.4vw 0;
     width: 10vw;
   }
